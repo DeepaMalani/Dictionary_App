@@ -1,6 +1,7 @@
 # Dictionary App
 Dictionary app is an android app that allows users to search for the meaning of the word. Users get a list of definitions for the word that 
 they type in the search bar.
+
 Submitted by: Deepa Malani
 Time spent: 10-11 Hours
 
