@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:paddingBottom="8dp"
+            android:paddingBottom="12dp"
             android:orientation="horizontal">
 
 
@@ -33,6 +33,16 @@
                 android:text="@string/search" />
         </LinearLayout>
 
+    <TextView
+        android:id="@+id/txt_heading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:text="@string/search_dictionary"
+        android:paddingBottom="16dp">
+
+    </TextView>
         <TextView
             android:id="@+id/txt_word"
             android:layout_width="wrap_content"
