@@ -20,15 +20,17 @@ class MainActivity : AppCompatActivity() {
     lateinit var viewModelFactory:DictionaryViewModelFactory
     lateinit var query: String
     lateinit var textViewWord: TextView
+    lateinit var textViewHeading: TextView
     lateinit var definitionsList: RecyclerView
     lateinit var textViewDefinition: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
          setContentView(R.layout.activity_main)
 
-        // get reference to textview
+        // get reference to textviews
         textViewWord = findViewById<TextView>(R.id.txt_word)
         textViewDefinition = findViewById<TextView>(R.id.txt_Definition)
+        textViewHeading = findViewById<TextView>(R.id.txt_heading)
          // get reference to edit text
           editTextSearch = findViewById<EditText>(R.id.edit_text_query)
         // get reference to button
@@ -71,7 +73,7 @@ class MainActivity : AppCompatActivity() {
             }else{
                 //Hide views, since no data for the input query
                 setViewsVisibility(false)
-                textViewWord.setText("No Results Found")
+                textViewHeading.setText("No Results Found")
                 setViewsVisibility(false)
             }
 
@@ -83,13 +85,17 @@ class MainActivity : AppCompatActivity() {
      */
     private fun setViewsVisibility(status:Boolean){
         if(status){
+            textViewWord.visibility = View.VISIBLE
             definitionsList.visibility = View.VISIBLE
             textViewDefinition.visibility = View.VISIBLE
+            textViewHeading.visibility = View.GONE
         }
         else
         {
+            textViewWord.visibility = View.GONE
             definitionsList.visibility = View.GONE
             textViewDefinition.visibility = View.GONE
+            textViewHeading.visibility = View.VISIBLE
         }
     }
 
