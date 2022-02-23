@@ -21,6 +21,8 @@ The following optional features are implemented:
 ![AppDictionaryDemo](https://user-images.githubusercontent.com/24900514/155388046-7dca8968-b36d-4da3-8d23-91a29c898af8.gif)
 
 ## Notes
-I was trying to bind views to data using "DataBinding" instead of "findViewById" because it helps to reduce boilerplate and provide Less coupling. I have used "DataBinding" in the past and wanted to implement it for this project too. 
-I spent a couple of hours but could not implement it. I did a debugging and online search to find the reasons and found that the issue was related to my Android Studio version. 
+Challenge faced: 
+
+I tried to bind the UI views to viewmodel, using "DataBinding" instead of "findViewById" - because it helps to reduce boilerplate code and provide less coupling. I have used "DataBinding" in the past and wanted to implement it for this project too. 
+I spent a couple of hours but could not implement it. I tried to debug and search online to find the reasons - and found that the issue was related to my Android Studio version. 
 I will update my Android Studio and try to implement it again in the future.
