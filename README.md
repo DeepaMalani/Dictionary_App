@@ -3,6 +3,7 @@ Dictionary app is an android app that allows users to search for the meaning of 
 they type in the search bar.
 
 Submitted by: Deepa Malani
+
 Time spent: 10-11 Hours
 
 ## User Stories
