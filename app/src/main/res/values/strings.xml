@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Dictionary App</string>
     <string name="search">Search</string>
+    <string name="search_dictionary">Search Dictionary</string>
 </resources>
